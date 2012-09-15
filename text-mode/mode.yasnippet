@@ -1,0 +1,4 @@
+# name: mode
+# key: mode
+# --
+-*- mode: ${1:`(replace-regexp-in-string "-mode$" "" (symbol-name major-mode))`} -*-`(comment-region (line-beginning-position) (line-end-position))`
