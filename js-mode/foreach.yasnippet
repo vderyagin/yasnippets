@@ -1,0 +1,8 @@
+# name: foreach
+# key: foreach
+# --
+for (var ${2:property} in ${3:object}) {
+  if ($3.hasOwnProperty($2)) {
+    $0
+  }
+}
