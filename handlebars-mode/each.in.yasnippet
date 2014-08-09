@@ -1,0 +1,7 @@
+# name: {{#each item in collection}}
+# key: eachin
+# expand-env: ((yas-indent-line 'fixed))
+# --
+{{#each ${1:item} in ${2:collection}}}
+  $0{{$1}}
+{{/each}}
