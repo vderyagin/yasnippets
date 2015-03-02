@@ -1,4 +1,5 @@
-# name: #! /usr/bin/emacs --script
+# name: elisp shebang
 # key: #!
 # --
-#! /usr/bin/emacs --script
+#!/bin/sh
+":"; exec emacs --script "$0" "$@" # -*- mode: emacs-lisp; lexical-binding: t; -*-
